@@ -1,11 +1,11 @@
 {
-  "name": "group-project-12",
+  "name": "project-ctf-group",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/group-project-12/",
+    "build": "vite build --base=/project-ctf-group/",
     "preview": "vite preview"
   },
   "devDependencies": {
