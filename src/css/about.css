@@ -2,18 +2,19 @@
   background-image: url(/img/about/feature-phone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 80px 0;
 }
 
-@media screen and (min-resolution: 2x) {
+@media screen and (min-resolution: 2dppx) {
   .about {
     background-image: url(/img/about/feature-phone@2x.jpg);
   }
 }
 
-.container-about {
-  display: flex;
-  justify-content: center;
-  padding: 64px 16px;
+.about-container {
+  /* display: flex;
+  justify-content: column; */
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -25,6 +26,7 @@
   text-align: center;
   color: white;
   margin-bottom: 16px;
+  width: 288px;
 }
 
 .about-subtitle {
@@ -33,9 +35,9 @@
   font-size: 36px;
   line-height: 120%;
   letter-spacing: 0.01em;
-  text-align: center;
   color: white;
   margin-bottom: 24px;
+  width: 288px;
 }
 
 .about-text {
@@ -45,6 +47,7 @@
   line-height: 160%;
   text-align: center;
   color: white;
+  width: 288px;
 }
 
 @media screen and (min-width: 768px) {
@@ -53,7 +56,7 @@
   }
 }
 
-@media screen and (min-resolution: 2x) {
+@media screen and (min-resolution: 2dppx) {
   .about {
     background-image: url(../img/about/feature-tab@2x.jpg);
   }
@@ -76,12 +79,14 @@
   font-size: 36px;
   line-height: 120%;
   letter-spacing: 0.01em;
+  width: 100%;
 }
 
 .about-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
+  width: 100%;
 }
 
 @media screen and (min-width: 1280px) {
@@ -89,7 +94,7 @@
     background-image: url(/img/about/feature-desktop.jpg);
   }
 }
-@media screen and (min-resolution: 2x) {
+@media screen and (min-resolution: 2dppx) {
   .about {
     background-image: url(/img/about/feature-desktop@2x.jpg);
   }
