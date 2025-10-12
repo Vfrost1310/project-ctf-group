@@ -43,12 +43,6 @@ p {
   font-size: 16px;
   line-height: 1.6;
 }
-.smallp {
-  font-size: 14px;
-}
-.menup {
-  font-size: 16px !important;
-}
 h1,
 h2,
 h3,
@@ -96,11 +90,10 @@ section {
   padding: 32px 16px;
   margin: auto;
 }
-.container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 
 /* Utility */
 .hidden {
@@ -138,17 +131,16 @@ button:disabled {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #d7f2db;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+  background: #75d281;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #60b36b;
 }
 
 /* Inputs and Text Areas */
