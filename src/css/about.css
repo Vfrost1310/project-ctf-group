@@ -36,41 +36,50 @@
 }
 
 @media screen and (min-width: 768px) {
+  @media screen and (min-resolution: 2dppx) {
+    .about {
+      background-image: url(../img/about/feature-tab@2x.jpg);
+    }
+  }
+
+  .about-subtitle {
+    margin: 0 auto;
+    font-size: 36px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
   .about {
     background-image: url(/img/about/feature-tab.jpg);
   }
 }
 
-@media screen and (min-resolution: 2dppx) {
-  .about {
-    background-image: url(../img/about/feature-tab@2x.jpg);
-  }
-}
-
-.about-subtitle {
-  margin: 0 auto;
-  font-size: 36px;
-}
-
-.about-text {
-  width: 100%;
-}
-
 @media screen and (min-width: 1280px) {
+  @media screen and (min-resolution: 2dppx) {
+    .about {
+      background-image: url(/img/about/feature-desktop@2x.jpg);
+    }
+
+    .about-container {
+      width: 500px;
+    }
+  }
+
+  .about-subtitle {
+    font-size: 56px;
+  }
+
   .about {
     background-image: url(/img/about/feature-desktop.jpg);
-  }
-}
-@media screen and (min-resolution: 2dppx) {
-  .about {
-    background-image: url(/img/about/feature-desktop@2x.jpg);
   }
 
   .about-container {
     width: 500px;
   }
-}
 
-.about-subtitle {
-  font-size: 56px;
+  .about-subtitle {
+    font-size: 56px;
+  }
 }
