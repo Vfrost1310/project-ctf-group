@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 12px 0px 20px;
+  padding: 0px 20px 0px 20px;
 }
 
 /*==== Logo ====*/
@@ -37,18 +37,16 @@
 /* Mobile & Tablet Navigation (320px - 1439px) */
 .nav {
   display: flex;
-  align-items: center;
 }
 
 .nav-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   background: transparent;
   border: none;
-  cursor: pointer;
   padding: 0;
   transition: opacity 0.2s;
 }
@@ -109,10 +107,6 @@ button:active {
 }
 
 .nav-list a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #030a06;
   transition: color 0.2s;
   display: block;
 }
@@ -128,10 +122,6 @@ button:active {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #030a06;
   transition: color 0.2s;
 }
 
@@ -146,16 +136,7 @@ button:active {
 }
 
 @media (min-width: 768px) {
-  /*=========== CONTAINER ===========*/
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
   /*-------- Tablet Navigation --------*/
-  .header-inner {
-    padding-right: 16px;
-  }
 
   /* Tablet - keep burger menu */
   .nav-panel {
@@ -165,13 +146,6 @@ button:active {
 }
 
 @media (min-width: 1440px) {
-  /*=========== CONTAINER ===========*/
-
-  .container {
-    max-width: 1440px;
-    padding: 0 64px;
-  }
-
   /*---------- Desktop Navigation ----------*/
 
   a:hover,
@@ -186,9 +160,10 @@ button:active {
 
   /* Show desktop navigation */
   .header-inner {
+    min-width: 1440px;
     padding: 0 64px;
-    justify-content: space-between;
   }
+
   .nav-header {
     display: flex;
     align-items: center;
@@ -216,6 +191,7 @@ button:active {
     position: relative;
     padding-bottom: 2px;
   }
+
   .nav-head-item::after {
     content: '';
     position: absolute;
@@ -226,16 +202,19 @@ button:active {
     background: #030a06;
     transition: width 0.2s ease;
   }
+
   .nav-head-item:hover::after,
   .nav-head-item:focus-visible::after {
     text-decoration: none;
     width: 100%;
   }
+
   .nav-head-item:active::after,
   .nav-head-item.is-active::after {
     width: 100%;
     background: #3ac04c;
   }
+
   .nav-head-item:active {
     color: #3ac04c; /* brand-700 for active text */
   }
