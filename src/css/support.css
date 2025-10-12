@@ -1,0 +1,286 @@
+.container {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 16px;
+  background-color: #ebf8ed;
+  box-sizing: border-box; 
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+padding-block: 64px;
+padding-inline: 32px;
+width: 768px;
+height: 1239px;
+background-color: #ebf8ed;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+   padding: 64px;
+width: 1440px;
+height: 895px;
+background-color: #ebf8ed;
+  }
+}
+
+
+
+@media (min-width: 320px) {
+  .contact-section {
+    background: #ebf8ed;
+    padding: 32px 16px;
+  }
+
+  .contact-container {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 16px;
+    box-sizing: border-box; 
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .contact-form-wrapper {
+    width: 100%;
+  }
+  .contact-image-wrapper {
+    width: 100%;
+    max-width: 320px;
+    margin: 16px auto 0;  
+    order: 2;          
+    border-radius: 16px;
+    background-image: url("../img/support/contact-phone.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;         
+  }
+
+  .contact-image {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+  .contact-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #030a06;
+    margin-bottom: 24px;
+  }
+
+  .contact-subtitle {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #030a06;
+    margin-bottom: 32px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    max-width: 288px;
+  }
+
+  .form-label {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(3, 10, 6, 0.05);
+  }
+
+  .form-input {
+    height: 42px;
+  }
+  .form-input:focus,
+  .form-input:hover{
+   color: rgba(3, 10, 6, 0.6);
+  }
+.form-input:active{
+   color: #030a06;
+}
+.form-input:disabled{
+    color: #d64040;
+}
+  .form-textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .error-message {
+    display: none;
+    font-size: 14px;
+    color: #ff4d4f;
+    margin-top: 6px;
+  }
+
+  .form-input:invalid + .error-message,
+  .form-textarea:invalid + .error-message {
+    display: block;
+  }
+
+  .form-button {
+    border: 1px solid #030a06;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 288px;
+    height: 50px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    background: #030a06;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .form-button:hover,
+  .form-button:focus {
+    opacity: 0.5;
+  }
+
+  .form-button:active {
+    background: #113916;
+    opacity: 0.6;
+  }
+
+  .form-button:disabled {
+    opacity: 0.2;
+  }
+}
+@media (min-width: 768px) {
+  .contact-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    text-align: left;
+    gap: 32px; 
+  }
+
+  .contact-form-wrapper {
+    width: 100%;
+    max-width: 704px;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%; 
+    max-width: 704px;
+    box-sizing: border-box;
+  }
+
+  .form-textarea {
+    height: 180px;
+  }
+
+  .contact-button {
+    width: 100%;
+    max-width: 704px;
+  }
+
+  .contact-image-wrapper {
+    width: 100%;
+    max-width: 704px; 
+    height: 428px;
+    margin: 0;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    order: 2;
+  }
+}
+@media (min-width: 1158px) {
+  .contact-container {
+    max-width: 1440px;
+    padding: 64px 32px;
+  }
+
+  .contact-content {
+    flex-direction: row; 
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 48px;
+  }
+
+  .contact-form-wrapper {
+    flex: 0 0 55%;
+    max-width: 700px;
+  }
+
+  .contact-image-wrapper {
+    flex: 0 0 45%;
+    max-width: 700px;
+    min-height: 400px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    order: 0; 
+  }
+
+  .form-input{
+    min-width: 644px;
+    height: 42px;
+  }
+
+  .form-textarea {
+    height: 214px;
+    min-width: 644px;
+  }
+
+  .form-button {
+    border: 1px solid #030a06;
+border-radius: 6px;
+padding-block: 12px;
+padding-inline: 24px;
+width: 198px;
+height: 50px;
+background-color: #030a06;
+  }
+}
