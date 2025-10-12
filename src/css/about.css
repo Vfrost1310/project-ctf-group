@@ -46,8 +46,10 @@
     background-image: url(../img/about/feature-tab@2x.jpg);
   }
 }
-.about-container {
-  width: 100%;
+
+.about-subtitle {
+  margin: 0 auto;
+  font-size: 36px;
 }
 
 .about-text {
@@ -64,10 +66,8 @@
     background-image: url(/img/about/feature-desktop@2x.jpg);
   }
 
-  .container-about {
-    padding-left: 69.5px;
-    padding-right: 69.5px;
-    width: 100%;
+  .about-container {
+    width: 500px;
   }
 }
 
