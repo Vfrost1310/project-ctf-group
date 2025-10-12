@@ -43,12 +43,7 @@ p {
     font-size: 16px;
     line-height: 1.6;
 }
-.smallp {
-    font-size: 14px;
-}
-.menup {
-    font-size: 16px !important;
-}
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -86,7 +81,7 @@ img {
 }
 
 section {
-    padding: 32px 16px;
+    padding: 32px 0px;
     margin: auto;
 }
     .container {
@@ -130,14 +125,13 @@ button {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #c9c9c967;
 }
 ::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
@@ -171,10 +165,11 @@ textarea {
 /* Media */
 @media (min-width: 768px) {
     section {
-        padding: 64px 32px;
+        padding: 64px 0px;
     }
         .container {
             max-width: 704px;
+            padding: 0 32px;
         }
     
     html {
@@ -190,9 +185,10 @@ textarea {
 
 @media (min-width: 1440px) {
     section {
-        padding: 64px 64px;
+        padding: 64px 0px;
     }
         .container {
             max-width: 960px;
+            padding: 0 64px;
         }
 }
