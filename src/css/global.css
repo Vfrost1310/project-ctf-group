@@ -178,29 +178,26 @@ textarea::placeholder {
 
 /* Media */
 @media (min-width: 768px) {
-  section {
-    padding: 64px 32px;
-  }
-  .container {
-    max-width: 704px;
-  }
-
-  html {
-    font-size: 18px;
-  }
-  .tabp {
-    font-size: 16px !important;
-  }
-  button {
-    font-size: 16px !important;
-  }
+    section {
+        padding: 64px 32px;
+    }
+        .container {
+            max-width: 704px;
+        }
+    
+    html {
+        font-size: 18px;
+    }
+    button {
+        font-size: 16px !important;
+    }
 }
 
 @media (min-width: 1440px) {
-  section {
-    padding: 64px 64px;
-  }
-  .container {
-    max-width: 960px;
-  }
+    section {
+        padding: 64px 64px;
+    }
+        .container {
+            max-width: 1312px;
+        }
 }
