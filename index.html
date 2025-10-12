@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-ctf-group/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-ctf-group/assets/index-Bm3DoPnn.css">
+    <link rel="stylesheet" crossorigin href="/project-ctf-group/assets/index-BmwPCeoX.css">
   </head>
   <body>
     <header class="site-header">
@@ -326,8 +326,11 @@
 
       <section class="contact-section">
   <div class="contact-container">
-    <h2 class="contact-title">Залишились питання? Зв'яжіться з нами!</h2>
-    <p class="contact-subtitle">Ми тут, щоб допомогти!</p>
+    <div class="contact-content">
+      <div class="contact-form-wrapper">
+        <h2 class="contact-title">Залишились питання? 
+          Зв'яжіться з нами!</h2>
+        <p class="contact-subtitle">Ми тут, щоб допомогти!</p>
 
     <form class="contact-form" novalidate>
 
@@ -345,32 +348,54 @@
         >
       </div>
 
-      <div class="form-group">
-        <label for="email" class="form-label">Email:</label>
-        <input 
-          type="email" 
-          id="email"
-          name="email" 
-          class="form-input form-input-email"
-          placeholder="example@email.com"
-          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-          required
-        >
-      </div>
+  <div class="form-group">
+    <label for="email" class="form-label">Електронна пошта</label>
+    <input 
+      type="email" 
+      id="email"
+      name="email" 
+      class="form-input"
+      placeholder="example@email.com"
+      pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+      required
+    >
+  </div>
 
-      <div class="form-group">
-        <label for="message" class="form-label">Повідомлення (необов’язково):</label>
-        <textarea 
-          id="message"
-          name="message" 
-          class="form-textarea"
-          placeholder="Ваше повідомлення..." 
-          maxlength="500"
-        ></textarea>
-      </div>
+  <div class="form-group">
+    <label for="message" class="form-label">Повідомлення</label>
+    <textarea 
+      id="message"
+      name="message" 
+      class="form-textarea"
+      placeholder="Ваше повідомлення..."
+      maxlength="500"
+    ></textarea>
+  </div>
 
-      <button type="submit" class="form-button">Надіслати</button>
-    </form>
+  <button type="submit" class="form-button">Надіслати</button>
+</form>
+      </div>
+      <div class="contact-image-wrapper">
+        <picture>
+          <source
+            srcset="/project-ctf-group/assets/contact-desktop-B_7t_CvA.jpg 1x, /project-ctf-group/assets/contact-desktop@2x-Ppm3s4lS.jpg 2x"
+            media="(min-width: 1158px)"
+          />
+          <source
+            srcset="/project-ctf-group/assets/contact-tab-B8kvsljQ.jpg 1x, /project-ctf-group/assets/contact-tab@2x-DcNYKOfv.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/project-ctf-group/assets/contact-phone-E7QZvS5l.jpg 1x, /project-ctf-group/assets/contact-phone@2x-D5O0ljJ4.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/project-ctf-group/assets/contact-phone-E7QZvS5l.jpg"
+            alt="Контактне зображення"
+            class="contact-image"/>
+        </picture>
+      </div>
+    </div>
   </div>
 </section>
 
