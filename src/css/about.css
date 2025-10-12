@@ -5,6 +5,11 @@
   padding: 64px 0;
 }
 
+.about-container {
+  text-align: center;
+  color: white;
+}
+
 @media screen and (min-resolution: 2dppx) {
   .about {
     background-image: url(/img/about/feature-phone@2x.jpg);
@@ -12,29 +17,12 @@
 }
 
 .about-title {
-  text-align: center;
-  color: white;
   margin: 0 auto;
-  width: 100%;
   margin-bottom: 12px;
 }
 
-.about-subtitle-wrapper {
-  text-align: center;
-  margin: 0 auto;
-}
-
 .about-subtitle {
-  color: white;
-  width: 100%;
-  text-align: center;
   margin-bottom: 20px;
-}
-
-.about-text {
-  text-align: center;
-  color: white;
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -54,7 +42,8 @@
   }
 
   .about-text {
-    width: 100%;
+    max-width: 573px;
+    margin: auto;
   }
 
   .about {
@@ -67,10 +56,6 @@
     .about {
       background-image: url(/img/about/feature-desktop@2x.jpg);
     }
-
-    .about-container {
-      width: 500px;
-    }
   }
 
   .about-subtitle {
@@ -82,7 +67,7 @@
   }
 
   .about-container {
-    width: 500px;
+    max-width: 629px;
   }
 
   .about-subtitle {
