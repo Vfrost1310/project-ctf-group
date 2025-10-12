@@ -1,165 +1,172 @@
 html {
-    font-size: 16px;
-    line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.6;
 }
 body {
-    background-color: #ebf8ed;
-    margin: 0;
-    font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
-    color: #030a06;
+  background-color: #ebf8ed;
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+  color: #030a06;
 }
 
 /* Fonts */
 h1 {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 120%;
-    letter-spacing: 0.01em;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
 }
 h2 {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 120%;
-    letter-spacing: 0.01em;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
 }
 h3 {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 140%;
-    letter-spacing: 0.01em;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
 }
 h6 {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
 }
 p {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
 }
-
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-    a {
-        text-decoration: none;
-        color: #030a06;
-        font-family: "Fira Sans", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.6;
-    }
-        a:hover, a:focus {
-            text-decoration: underline;
-        }
-        a:active {
-            color: #3ac04c;
-        }
-        a:disabled {
-            opacity: 0.2;
-            pointer-events: none;
-            cursor: not-allowed;
-        }
+a {
+  text-decoration: none;
+  color: #030a06;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+a:active {
+  color: #3ac04c;
+}
+a:disabled {
+  opacity: 0.2;
+  pointer-events: none;
+  cursor: not-allowed;
+}
 
 /* Default */
 ul {
-    margin: 0;
-    padding-left: 0;
+  margin: 0;
+  padding-left: 0;
 }
-    ul li {
-        display: inline-block;
-    }
+ul li {
+  display: inline-block;
+}
 
 img {
-    display: block;
+  display: block;
 }
 
 section {
-    padding: 32px 16px;
-    margin: auto;
+  padding: 32px 16px;
+  margin: auto;
 }
-    .container {
-        max-width: 288px;
-        margin: 0 auto;
-    }
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 
 /* Utility */
 .hidden {
-    display: none;
+  display: none;
 }
 .visible {
-    display: block;
+  display: block;
 }
 
 /* Button general */
 button {
-    border: 1px solid #030a06;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
 }
-    button:hover, button:focus {
-        border: 1px solid #030a06;
-        opacity: 0.5;
-    }
-    button:active {
-        border: 1px solid #113916;
-        opacity: 0.6;
-    }
-    button:disabled {
-        border: 1px solid #030a06;
-        opacity: 0.2;
-        cursor: not-allowed;
-    }
+button:hover,
+button:focus {
+  border: 1px solid #030a06;
+  opacity: 0.5;
+}
+button:active {
+  border: 1px solid #113916;
+  opacity: 0.6;
+}
+button:disabled {
+  border: 1px solid #030a06;
+  opacity: 0.2;
+  cursor: not-allowed;
+}
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-    background: #d7f2db;
+  background: #d7f2db;
 }
 ::-webkit-scrollbar-thumb {
-    background: #75d281;
+  background: #75d281;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #60b36b;
+  background: #60b36b;
 }
 
 /* Inputs and Text Areas */
 input,
 textarea {
-    border: 1px solid #030a06, 15%;
-    border-radius: 6px;
-    padding: 8px 12px;
-    background: #030a06, 5%;
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    color: #030a06;
+  border: 1px solid #030a06, 15%;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #030a06, 5%;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #030a06;
 }
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
-    input::placeholder,
-    textarea::placeholder {
-        font-family: "Fira Sans", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 160%;
-        color: #030a06, 60%;
-    }
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #030a06, 60%;
+}
 
 /* Media */
 @media (min-width: 768px) {
@@ -172,9 +179,6 @@ textarea {
     
     html {
         font-size: 18px;
-    }
-    .tabp {
-        font-size: 16px !important;
     }
     button {
         font-size: 16px !important;
