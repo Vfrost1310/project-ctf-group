@@ -181,7 +181,8 @@ background-color: #ebf8ed;
 
   .form-button:hover,
   .form-button:focus {
-    opacity: 0.5;
+background: #030a06;
+opacity: 0.5;
   }
 
   .form-button:active {
