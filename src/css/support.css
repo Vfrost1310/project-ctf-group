@@ -136,7 +136,16 @@ background-color: #ebf8ed;
   .form-input {
     height: 42px;
   }
-
+  .form-input:focus,
+  .form-input:hover{
+   color: rgba(3, 10, 6, 0.6);
+  }
+.form-input:active{
+   color: #030a06;
+}
+.form-input:disabled{
+    color: #d64040;
+}
   .form-textarea {
     min-height: 120px;
     resize: vertical;
