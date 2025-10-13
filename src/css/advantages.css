@@ -1,5 +1,6 @@
 .paragraf_advantages {
   margin-bottom: 12px;
+
   padding: 0 16px;
 }
 .title_advantages {
@@ -51,7 +52,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     gap: 24px;
   }
 
@@ -70,7 +70,6 @@
 
   .photo_advantages {
     width: 100%;
-
     object-fit: cover;
     border-radius: 32px;
     display: block;
