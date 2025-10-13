@@ -1,0 +1,15 @@
+.footer {
+  background-color: #75d281;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer-navigation-list {
+  width: 88px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-social-link {
+  color: black;
+}
