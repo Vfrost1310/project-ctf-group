@@ -1,6 +1,9 @@
 .footer {
   background-color: #75d281;
 }
+.container {
+  padding: 48px 20px;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -9,7 +12,39 @@
   width: 88px;
   display: flex;
   flex-direction: column;
+  margin-left: 96px;
+  gap: 32px;
 }
 .footer-social-link {
   color: black;
+}
+.icon-logo {
+  fill: black;
+}
+.footer-contacts {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-contacts-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .footer-contacts {
+    max-width: 704px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1440px) {
+  .footer-navigation-list {
+    width: 1312px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 32px;
+  }
 }
