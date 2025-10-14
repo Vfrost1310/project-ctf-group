@@ -1,15 +1,139 @@
 .footer {
   background-color: #75d281;
+  padding: 48px 20px;
 }
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
+  .footer-container {
+    display: flex;
+    max-width: 280px;
+    flex-direction: column;
+  }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      margin-bottom: 48px;
+      align-items: center;
+    }
 .footer-navigation-list {
-  width: 88px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
-.footer-social-link {
-  color: black;
+  .footer-contacts-list {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+.footer-contacts {
+  text-align: center;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-line {
+  width: 100%;
+  height: 0px;
+  border: 1px solid #040c0726;
+  margin: 0 0 24px;
+}
+
+.footer-navigation-link {
+  white-space: nowrap;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.footer-navigation-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  background: #030a06;
+  transition: width 0.2s ease;
+}
+
+.footer-navigation-link:hover::after,
+.footer-navigation-link:focus-visible::after {
+  text-decoration: none;
+  width: 100%;
+}
+
+.footer-navigation-link:active::after,
+.footer-navigation-link.is-active::after {
+  width: 100%;
+  background: #3ac04c;
+}
+
+.footer-navigation-link:active {
+  color: #3ac04c;
+}
+
+.footer-authority{
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+.footer {
+  background-color: #75d281;
+  padding: 64px 32px;
+}
+  .footer-container {
+    max-width: 704px;
+  }
+  .footer-navigation-list {
+    flex-direction: row;
+  }
+    .footer-contacts-list {
+      flex-direction: row;
+      justify-content: center;
+    }
+      .wrapper {
+        gap: 32px;
+        margin-bottom: 24px;
+      }
+      .footer-line {
+        margin: 0 0 16px;
+      }
+      .footer-contacts-list {
+        gap: 32px;
+      }
+      .footer-contacts-list {
+        margin-bottom: 16px;
+      }
+        .footer svg.icon {
+          width: 40px;
+          height: 40px;
+        }
+         .icon-logo {
+          width: 164px;
+          height: 70px;
+         }
+}
+
+@media screen and (min-width: 1440px) {
+.footer {
+  background-color: #75d281;
+  padding: 80px 64px;
+}
+  .footer-container {
+    max-width: 1312px;
+  }
+    .wrapper {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 52px;
+    }
+      .footer svg.icon {
+        width: 24px;
+        height: 24px;
+      }
+  
 }
