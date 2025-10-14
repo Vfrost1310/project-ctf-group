@@ -1,33 +1,3 @@
-.container {
-  max-width: 320px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 32px 16px;
-  background-color: #ebf8ed;
-  box-sizing: border-box; 
-}
-
-
-@media screen and (min-width: 768px) {
-  .container {
-padding-block: 64px;
-padding-inline: 32px;
-width: 768px;
-height: 1239px;
-background-color: #ebf8ed;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .container {
-   padding: 64px;
-width: 1440px;
-height: 895px;
-background-color: #ebf8ed;
-  }
-}
-
-
 
 @media (min-width: 320px) {
   .contact-section {
