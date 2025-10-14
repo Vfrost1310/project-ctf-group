@@ -1,0 +1,106 @@
+/*=========== Мобильный 320 ===========*/
+.hero {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.hero-main {
+  width: 100%;
+  height: auto;
+}
+
+.logo-and-button {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+.sect-left {
+  margin-bottom: 20px;
+}
+
+.hero-logo {
+  text-align: start;
+}
+
+.hero-text {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.hero-button {
+  width: 100%;
+  max-width: 288px;
+  height: 50px;
+  padding: 12px 24px;
+  background-color: #030a06;
+  align-items: center;
+  color: #ffff;
+  white-space: nowrap;
+}
+
+.hero-image {
+  border-radius: 40px;
+  width: 100%;
+  height: auto;
+}
+
+/*========tablet 768 ========*/
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 32px;
+  }
+
+  .logo-and-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+
+  .sect-left {
+    width: 640px;
+    margin-bottom: 0;
+  }
+
+  .sect-right {
+    width: 640px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .hero-button {
+    width: 148px;
+  }
+}
+
+/*========descktop 1440 MAIN========*/
+@media (min-width: 1440px) {
+  .hero {
+    padding-top: 32px;
+  }
+
+  .logo-and-button {
+    gap: 32px;
+  }
+
+  .hero-logo {
+    font-size: 56px;
+  }
+
+  .sect-left {
+    max-width: 640px;
+  }
+
+  .sect-right {
+    max-width: 640px;
+    text-align: start;
+  }
+}
