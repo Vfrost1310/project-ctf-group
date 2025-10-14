@@ -4,24 +4,12 @@
   padding-bottom: 64px;
 }
 
-.hero-main {
-  width: 100%;
-  height: auto;
-}
-
 .logo-and-button {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
   margin-bottom: 24px;
 }
 
 .sect-left {
   margin-bottom: 20px;
-}
-
-.hero-logo {
-  text-align: start;
 }
 
 .hero-text {
@@ -31,11 +19,9 @@
 
 .hero-button {
   width: 100%;
-  max-width: 288px;
   height: 50px;
   padding: 12px 24px;
   background-color: #030a06;
-  align-items: center;
   color: #ffff;
   white-space: nowrap;
 }
@@ -55,20 +41,12 @@
 
   .logo-and-button {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: start;
     gap: 24px;
     margin-bottom: 20px;
   }
 
   .sect-left {
-    width: 640px;
     margin-bottom: 0;
-  }
-
-  .sect-right {
-    width: 640px;
   }
 
   .hero-text {
@@ -83,24 +61,13 @@
 
 /*========descktop 1440 MAIN========*/
 @media (min-width: 1440px) {
-  .hero {
-    padding-top: 32px;
-  }
-
   .logo-and-button {
     gap: 32px;
   }
-
-  .hero-logo {
-    font-size: 56px;
-  }
-
   .sect-left {
-    max-width: 640px;
+    width: calc((100% - 32px) / 2);
   }
-
   .sect-right {
-    max-width: 640px;
-    text-align: start;
+    width: calc((100% - 32px) / 2);
   }
 }

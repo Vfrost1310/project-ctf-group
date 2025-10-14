@@ -90,9 +90,8 @@ section {
     margin: auto;
 }
     .container {
-        max-width: 320px;
+        max-width: 288px;
         margin: 0 auto;
-        padding: 0 16px;
     }
 
 /* Utility */
@@ -193,6 +192,9 @@ textarea {
         padding: 64px 64px;
     }
         .container {
-            max-width: 960px;
+            max-width: 1312px;
         }
+    h1 {
+        font-size: 56px;
+    }
 }
