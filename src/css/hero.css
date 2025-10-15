@@ -24,6 +24,8 @@
   background-color: #030a06;
   color: #ffff;
   white-space: nowrap;
+  display: block;
+  text-align: center;
 }
 
 .hero-image {
