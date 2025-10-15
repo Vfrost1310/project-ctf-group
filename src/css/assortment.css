@@ -1,61 +1,44 @@
 .assortment-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 32px;
 }
 
 .assortment-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 40px;
-  padding: 0;
 }
 
 .assortment-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  min-height: 531px;
 }
 
 .assortment-image {
   border-radius: 32px;
-  width: 288px;
-  min-height: 345px;
   margin-bottom: 16px;
 }
 
 .assortment-name {
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
   font-size: 18px;
-
-  /* line-height: 29px; */
   line-height: 160%;
   text-align: center;
-  color: #030a06;
 }
 
 .assortment-txt {
-  font-weight: 400;
-  font-size: 14px;
-
-  /* line-height: 22px; */
-  line-height: 160%;
   text-align: center;
-  color: #030a06;
   margin-bottom: 8px;
 }
 
 .assortment-cost {
   font-weight: 600;
   font-size: 20px;
-
-  /* line-height: 32px; */
-  line-height: 160%;
   text-align: center;
-  color: #030a06;
-  margin-bottom: 16px;
 }
 
 .assortment-btn {
@@ -63,8 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 288px;
-  height: 40px;
+  min-width: 288px;
   background-color: transparent;
 }
 
@@ -82,29 +64,13 @@
   .assortment-list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     column-gap: 24px;
     row-gap: 48px;
-    padding: 0;
   }
 
   .assortment-item {
-    width: calc((100% - 24px) / 2);
-    height: 593px;
-    min-width: 300px;
-  }
-
-  .assortment-image {
-    min-width: 340px;
-    margin-bottom: 16px;
-  }
-
-  .assortment-txt {
-    width: 340px;
-  }
-
-  .assortment-btn {
-    margin-bottom: 48px;
+    min-height: 593px;
+    max-width: 340px;
   }
 
   .bag-dinner {
@@ -122,31 +88,15 @@
   }
 
   .assortment-list {
-    width: 1320px;
-    column-gap: 24px;
     row-gap: 72px;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .assortment-item {
-    width: calc((100% - 72px) / 4);
-  }
-
-  .assortment-image {
-    min-width: 310px;
-    margin-bottom: 16px;
-  }
-
-  .assortment-txt {
-    width: 310px;
+    max-width: 310px;
+    min-height: 557px;
   }
 
   .bag-child {
     margin-bottom: 38px;
-  }
-
-  .assortment-btn {
-    margin-bottom: 64px;
   }
 }

@@ -1,28 +1,21 @@
 .paragraf_advantages {
   margin-bottom: 12px;
-
-  padding: 0 16px;
 }
 .title_advantages {
   margin-bottom: 20px;
-  padding: 0 16px;
 }
 
 .title_paragraf {
   margin-bottom: 48px;
-  padding: 0 16px;
 }
 
 .item_advantages {
-  max-width: 100%;
-  padding: 0 16px;
   box-sizing: border-box;
   margin-bottom: 48px;
 }
 
 .photo_advantages {
   display: block;
-  max-width: 100%;
   height: auto;
   border-radius: 32px;
   margin-bottom: 8px;
@@ -57,7 +50,7 @@
 
   .item_advantages {
     flex: 1 1 calc(50% - 12px);
-    padding: 0;
+    margin-bottom: 0;
   }
 
   .item_advantages:nth-child(3) {
