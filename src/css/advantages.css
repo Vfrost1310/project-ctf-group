@@ -1,19 +1,22 @@
 .paragraf_advantages {
   margin-bottom: 12px;
+
+  padding: 0 16px;
 }
 .title_advantages {
   margin-bottom: 20px;
+  padding: 0 16px;
 }
 
 .title_paragraf {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #030a06;
   margin-bottom: 48px;
+  padding: 0 16px;
 }
 
 .item_advantages {
+  max-width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
   margin-bottom: 48px;
 }
 
@@ -32,15 +35,18 @@
 @media screen and (min-width: 768px) {
   .paragraf_advantages {
     margin-bottom: 16px;
+    padding: 0;
   }
 
   .title_advantages {
     margin-bottom: 24px;
+    padding: 0;
   }
 
   .title_paragraf {
     font-size: 18px;
     margin-bottom: 32px;
+    padding: 0;
   }
   .list_advantages {
     display: flex;
@@ -51,6 +57,7 @@
 
   .item_advantages {
     flex: 1 1 calc(50% - 12px);
+    padding: 0;
   }
 
   .item_advantages:nth-child(3) {
