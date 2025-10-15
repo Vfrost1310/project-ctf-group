@@ -73,6 +73,10 @@
     background-color: transparent;
 }
 
+.assortment-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
 
 /* Media */
 @media (min-width: 768px) {
