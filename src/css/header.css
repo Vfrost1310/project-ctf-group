@@ -125,28 +125,30 @@ button:active {
   transition: color 0.2s;
 }
 
-.contact svg {
-  fill: currentColor;
-  flex-shrink: 0;
-}
-
 /* Desktop Navigation - Hidden on mobile/tablet */
 .nav-header {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /*-------- Tablet Navigation --------*/
+  .site-header {
+    padding: 0 32px;
+  }
+
+  .header-inner {
+    padding: 0;
+  }
 
   /* Tablet - keep burger menu */
   .nav-panel {
-    top: 64px;
-    padding: 32px 0 0 32px;
+    padding-left: 32px;
   }
 }
 
 @media (min-width: 1440px) {
-  /*---------- Desktop Navigation ----------*/
+  .site-header {
+    padding: 0 64px;
+  }
 
   a:hover,
   a:focus {
@@ -160,8 +162,8 @@ button:active {
 
   /* Show desktop navigation */
   .header-inner {
-    min-width: 1440px;
-    padding: 0 64px;
+    height: 72px;
+    padding: 0;
   }
 
   .nav-header {
@@ -183,10 +185,6 @@ button:active {
   }
 
   .nav-head-item {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #030a06;
     white-space: nowrap;
     position: relative;
     padding-bottom: 2px;
@@ -228,11 +226,6 @@ button:active {
   .contact-item {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #030a06;
     white-space: nowrap;
     position: relative;
     padding-bottom: 2px;
@@ -264,10 +257,5 @@ button:active {
 
   .contact-item:active {
     color: #3ac04c; /* brand-700 for active text */
-  }
-
-  .contact-item svg {
-    fill: currentColor;
-    flex-shrink: 0;
   }
 }

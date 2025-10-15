@@ -1,0 +1,76 @@
+.about {
+  background-image: url(/img/about/feature-phone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 64px 0;
+}
+
+.about-container {
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .about {
+    background-image: url(/img/about/feature-phone@2x.jpg);
+  }
+}
+
+.about-title {
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.about-subtitle {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  @media screen and (min-resolution: 2dppx) {
+    .about {
+      background-image: url(../img/about/feature-tab@2x.jpg);
+    }
+  }
+
+  .about-title {
+    margin-bottom: 16px;
+  }
+
+  .about-subtitle {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+
+  .about-text {
+    max-width: 573px;
+    margin: auto;
+  }
+
+  .about {
+    background-image: url(/img/about/feature-tab.jpg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  @media screen and (min-resolution: 2dppx) {
+    .about {
+      background-image: url(/img/about/feature-desktop@2x.jpg);
+    }
+  }
+
+  .about-subtitle {
+    font-size: 56px;
+  }
+
+  .about {
+    background-image: url(/img/about/feature-desktop.jpg);
+  }
+
+  .about-container {
+    max-width: 629px;
+  }
+
+  .about-subtitle {
+    font-size: 56px;
+  }
+}
