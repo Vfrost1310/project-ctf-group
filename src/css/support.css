@@ -108,6 +108,14 @@
     flex-direction: row;
   }
 
+  .contact-title {
+    font-size: 48px;
+  }
+
+  .contact-subtitle {
+  font-size: 18px;
+  }
+
   .contact-content {
     flex-direction: row; 
     align-items: flex-start;
