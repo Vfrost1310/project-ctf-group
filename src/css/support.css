@@ -90,6 +90,20 @@
   opacity: 0.2;
 }
 
+.contact-image-wrapper {
+  background-image: url(/img/support/contact-phone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  width: 288px;
+  height: 428px;
+}
+@media screen and (min-resolution: 2dppx) {
+  .about {
+    background-image: url(/img/support/contact-phone@2x.jpg);
+  }
+}
+
 @media (min-width: 768px) {
   .contact-content {
     display: flex;
@@ -101,6 +115,17 @@
 
   .form-textarea {
     min-height: 180px;
+  }
+
+  .contact-image-wrapper {
+    background-image: url(/img/support/contact-tab.jpg);
+    width: 704px;
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .about {
+      background-image: url(/img/support/contact-tab@2x.jpg);
+    }
   }
 }
 @media (min-width: 1440px) {
@@ -129,5 +154,20 @@
 
   .form-button {
     max-width: 198px;
+  }
+
+  .contact-image-wrapper {
+    background-image: url(/img/support/contact-desktop.jpg);
+    width: calc((1312px - 24px) / 2);
+    height: 767px;
+  }
+  .contact-form-wrapper {
+    width: calc((100% - 24px) / 2);
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .about {
+      background-image: url(/img/support/contact-desktop@2x.jpg);
+    }
   }
 }
