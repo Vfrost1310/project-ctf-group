@@ -435,8 +435,11 @@
 
       <section class="contact-section" id="support">
   <div class="contact-container">
-    <h2 class="contact-title">Залишились питання? Зв'яжіться з нами!</h2>
-    <p class="contact-subtitle">Ми тут, щоб допомогти!</p>
+    <div class="contact-content">
+      <div class="contact-form-wrapper">
+        <h2 class="contact-title">Залишились питання? 
+          Зв'яжіться з нами!</h2>
+        <p class="contact-subtitle">Ми тут, щоб допомогти!</p>
 
     <form class="contact-form" novalidate>
       <div class="form-group">
@@ -465,7 +468,6 @@
           required
         />
       </div>
-
       <div class="form-group">
         <label for="message" class="form-label"
           >Повідомлення (необов’язково):</label
@@ -479,8 +481,30 @@
         ></textarea>
       </div>
 
-      <button type="submit" class="form-button">Надіслати</button>
-    </form>
+  <button type="submit" class="form-button">Надіслати</button>
+</form>
+      </div>
+      <div class="contact-image-wrapper">
+        <picture>
+          <source
+            srcset="/project-ctf-group/assets/contact-desktop-B_7t_CvA.jpg 1x, /project-ctf-group/assets/contact-desktop@2x-Ppm3s4lS.jpg 2x"
+            media="(min-width: 1158px)"
+          />
+          <source
+            srcset="/project-ctf-group/assets/contact-tab-B8kvsljQ.jpg 1x, /project-ctf-group/assets/contact-tab@2x-DcNYKOfv.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/project-ctf-group/assets/contact-phone-E7QZvS5l.jpg 1x, /project-ctf-group/assets/contact-phone@2x-D5O0ljJ4.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/project-ctf-group/assets/contact-phone-E7QZvS5l.jpg"
+            alt="Контактне зображення"
+            class="contact-image"/>
+        </picture>
+      </div>
+    </div>
   </div>
 </section>
 
