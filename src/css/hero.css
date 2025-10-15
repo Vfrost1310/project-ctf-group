@@ -24,6 +24,15 @@
   background-color: #030a06;
   color: #ffff;
   white-space: nowrap;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  min-width: 288px;
 }
 
 .hero-image {
