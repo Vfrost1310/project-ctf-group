@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-ctf-group/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-ctf-group/assets/index-qWpi9aIn.css">
+    <link rel="stylesheet" crossorigin href="/project-ctf-group/assets/index-De61KTOd.css">
   </head>
   <body>
     <header class="site-header">
@@ -104,7 +104,7 @@
           Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та
           відповідальність разом з EcoTote.
         </p>
-        <button class="hero-button" type="button">Купити зараз</button>
+        <a href="#assortment.html" class="hero-button">Купити зараз</a>
       </div>
     </div>
     <picture>
@@ -128,6 +128,7 @@
         class="hero-image"
         alt="hero-image"
         width="288"
+        loading="lazy"
       />
     </picture>
   </div>
@@ -175,6 +176,7 @@
             class="photo_advantages"
             src="/img/advantages/layout-img1-desktop.jpg "
             alt="eco material"
+            loading="lazy"
           />
         </picture>
         <div class="itwrap">
@@ -205,6 +207,7 @@
             class="photo_advantages"
             src="/img/advantages/layout-img2-desktop.jpg "
             alt="secureiy stitched"
+            loading="lazy"
           />
         </picture>
         <div class="itwrap">
@@ -234,6 +237,7 @@
             class="photo_advantages"
             src="/project-ctf-group/assets/layout-img3-desktop-XLNp-oZ7.jpg"
             alt="fashionble bags"
+            loading="lazy"
           />
         </picture>
         <div class="itwrap">
@@ -521,8 +525,8 @@
   <div class="container">
     <h3>Галерея зображень</h3>
     <p>EcoTotes у повсякденному житті</p>
-    <div class="gallery-grid">
-      <div class="grid1">
+    <ul class="gallery-grid">
+      <li class="grid1">
         <picture>
           <source
             srcset="/project-ctf-group/assets/gallery-img4-desktop-JFogbVKe.jpg, /project-ctf-group/assets/gallery-img4-desktop@2x-b3vqMoy3.jpg 2x"
@@ -545,8 +549,8 @@
             loading="lazy"
           />
         </picture>
-      </div>
-      <div class="grid2">
+      </li>
+      <li class="grid2">
         <picture>
           <source
             srcset="/project-ctf-group/assets/gallery-img2-desktop-BWeUE3Bs.jpg, /project-ctf-group/assets/gallery-img2-desktop@2x-D3D7YSbg.jpg 2x"
@@ -569,8 +573,8 @@
             loading="lazy"
           />
         </picture>
-      </div>
-      <div class="grid3">
+      </li>
+      <li class="grid3">
         <picture>
           <source
             srcset="/project-ctf-group/assets/gallery-img3-desktop-ntvYrWrL.jpg, /project-ctf-group/assets/gallery-img3-desktop@2x-_1y2yxzQ.jpg 2x"
@@ -593,8 +597,8 @@
             loading="lazy"
           />
         </picture>
-      </div>
-      <div class="grid4">
+      </li>
+      <li class="grid4">
         <picture>
           <source
             srcset="/project-ctf-group/assets/gallery-img1-desktop-BW5zDIbB.jpg, /project-ctf-group/assets/gallery-img1-desktop@2x-DZMUkc-u.jpg 2x"
@@ -615,11 +619,10 @@
             alt="woman with shopping bags illustration"
             width="421"
             loading="lazy"
-            class="animate__fadeIn"
           />
         </picture>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -787,30 +790,7 @@
         <button type="submit" class="form-button">Надіслати</button>
       </form>
     </div>
-    <div class="contact-image-wrapper">
-      <picture>
-        <source
-          srcset="/project-ctf-group/assets/contact-desktop-B_7t_CvA.jpg 1x, /project-ctf-group/assets/contact-desktop@2x-Ppm3s4lS.jpg 2x"
-          media="(min-width: 1440px)"
-          width="644"
-        />
-        <source
-          srcset="/project-ctf-group/assets/contact-tab-B8kvsljQ.jpg 1x, /project-ctf-group/assets/contact-tab@2x-DcNYKOfv.jpg 2x"
-          media="(min-width: 768px)"
-          width="704"
-        />
-        <source
-          srcset="/project-ctf-group/assets/contact-phone-E7QZvS5l.jpg 1x, /project-ctf-group/assets/contact-phone@2x-D5O0ljJ4.jpg 2x"
-          media="(max-width: 767px)"
-          width="288"
-        />
-        <img
-          src="/project-ctf-group/assets/contact-phone-E7QZvS5l.jpg"
-          alt="Контактне зображення"
-          class="contact-image"
-        />
-      </picture>
-    </div>
+    <div class="contact-image-wrapper"></div>
   </div>
 </section>
 
@@ -819,7 +799,7 @@
     <footer class="footer">
   <div class="container footer-container">
     <div class="wrapper">
-      <a class="logo" href="#" aria-label="EcoTote home">
+      <a class="footer-logo" href="#" aria-label="EcoTote home">
         <svg class="footer-icon-logo" fill="none" width="280" height="121">
           <use href="/project-ctf-group/assets/logo-DoB1yzEL.svg"></use>
         </svg>
@@ -848,7 +828,11 @@
       </nav>
       <ul class="footer-social-list">
         <li>
-          <a href="https://www.instagram.com/" class="footer-social-link">
+          <a
+            href="https://www.instagram.com/"
+            class="footer-social-link"
+            target="_blank"
+          >
             <svg class="icon" width="32" height="32">
               <use
                 href="/project-ctf-group/assets/sprite-DeJ_xYfw.svg#icon-instagram"
@@ -858,7 +842,11 @@
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/" class="footer-social-link">
+          <a
+            href="https://www.linkedin.com/"
+            class="footer-social-link"
+            target="_blank"
+          >
             <svg class="icon" width="32" height="32">
               <use
                 href="/project-ctf-group/assets/sprite-DeJ_xYfw.svg#icon-linkedin"
@@ -868,7 +856,10 @@
           </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/" class="footer- social-link"
+          <a
+            href="https://www.youtube.com/"
+            class="footer- social-link"
+            target="_blank"
             ><svg class="icon" width="32" height="32">
               <use
                 href="/project-ctf-group/assets/sprite-DeJ_xYfw.svg#icon-youtube"
