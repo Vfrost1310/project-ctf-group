@@ -111,17 +111,21 @@ button:active {
   display: block;
 }
 
-.header-contacts {
+/* .header-contacts {
+  font-family: ;
+  text-decoration: none;
+} */
+
+.header-contacts-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-top: 32px;
+  margin-top: 32px;
 }
 
 .contact {
-  display: inline-flex;
+  font-style: normal; /* скасовує italic від address */
   align-items: center;
-  gap: 8px;
   transition: color 0.2s;
 }
 
@@ -217,13 +221,19 @@ button:active {
     color: #3ac04c; /* brand-700 for active text */
   }
 
-  .header-contacts-menu {
+  .header-contacts {
+    text-decoration: none;
+  }
+
+  .header-contacts-list-menu {
     display: flex;
     align-items: center;
     gap: 16px;
   }
 
   .contact-item {
+    font-style: normal;
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
