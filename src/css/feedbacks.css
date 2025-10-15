@@ -71,11 +71,8 @@
     margin-bottom: 80px;
   }
 
-  .feedback-item {
-    width: calc((100% - 72px) / 4);
-  }
-
   .advantages-p {
+    height: 84px;
     width: 310px;
     margin-bottom: 24px;
   }
