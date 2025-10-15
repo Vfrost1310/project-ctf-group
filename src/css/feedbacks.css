@@ -51,8 +51,12 @@
     row-gap: 32px;
   }
 
+  .feedback-item {
+    width: calc((100% - 24px) / 2);
+  }
+
   .advantages-p {
-    width: 340px;
+    height: 84px;
     margin-bottom: 24px;
   }
 }
@@ -71,9 +75,7 @@
     margin-bottom: 80px;
   }
 
-  .advantages-p {
-    height: 84px;
-    width: 310px;
-    margin-bottom: 24px;
+  .feedback-item {
+    width: calc((100% - 72px) / 4);
   }
 }
