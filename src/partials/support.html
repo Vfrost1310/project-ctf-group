@@ -1,77 +1,81 @@
 <section class="contact-section" id="support">
-  <div class="contact-container">
-    <div class="contact-content">
-      <div class="contact-form-wrapper">
-        <h2 class="contact-title">Залишились питання? 
-          Зв'яжіться з нами!</h2>
-        <p class="contact-subtitle">Ми тут, щоб допомогти!</p>
+  <div class="container contact-container">
+    <div class="contact-form-wrapper">
+      <h2 class="contact-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <p class="contact-subtitle">Ми тут, щоб допомогти!</p>
 
-    <form class="contact-form" novalidate>
-      <div class="form-group">
-        <label for="name" class="form-label">Ім’я:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          class="form-input form-input-name"
-          placeholder="Введіть ваше ім’я"
-          minlength="5"
-          maxlength="64"
-          required
+      <form class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name" class="form-label">Ім’я:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input form-input-name"
+            placeholder="Введіть ваше ім’я"
+            minlength="5"
+            maxlength="64"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input form-input-email"
+            placeholder="example@email.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label"
+            >Повідомлення (необов’язково):</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            class="form-textarea"
+            placeholder="Ваше повідомлення..."
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="form-button">Надіслати</button>
+      </form>
+    </div>
+    <div class="contact-image-wrapper">
+      <picture>
+        <source
+          srcset="
+            ./img/support/contact-desktop.jpg    1x,
+            ./img/support/contact-desktop@2x.jpg 2x
+          "
+          media="(min-width: 1158px)"
         />
-      </div>
-
-      <div class="form-group">
-        <label for="email" class="form-label">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="form-input form-input-email"
-          placeholder="example@email.com"
-          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-          required
+        <source
+          srcset="
+            ./img/support/contact-tab.jpg    1x,
+            ./img/support/contact-tab@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
         />
-      </div>
-      <div class="form-group">
-        <label for="message" class="form-label"
-          >Повідомлення (необов’язково):</label
-        >
-        <textarea
-          id="message"
-          name="message"
-          class="form-textarea"
-          placeholder="Ваше повідомлення..."
-          maxlength="500"
-        ></textarea>
-      </div>
-
-  <button type="submit" class="form-button">Надіслати</button>
-</form>
-      </div>
-      <div class="contact-image-wrapper">
-        <picture>
-          <source
-            srcset="./img/support/contact-desktop.jpg 1x,
-              ./img/support/contact-desktop@2x.jpg 2x"
-            media="(min-width: 1158px)"
-          />
-          <source
-            srcset="./img/support/contact-tab.jpg 1x,
-              ./img/support/contact-tab@2x.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./img/support/contact-phone.jpg 1x,
-              ./img/support/contact-phone@2x.jpg 2x"
-            media="(max-width: 767px)"
-          />
-          <img
-            src="./img/support/contact-phone.jpg"
-            alt="Контактне зображення"
-            class="contact-image"/>
-        </picture>
-      </div>
+        <source
+          srcset="
+            ./img/support/contact-phone.jpg    1x,
+            ./img/support/contact-phone@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./img/support/contact-phone.jpg"
+          alt="Контактне зображення"
+          class="contact-image"
+        />
+      </picture>
     </div>
   </div>
 </section>
